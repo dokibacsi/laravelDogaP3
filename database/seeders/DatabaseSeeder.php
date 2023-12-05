@@ -20,6 +20,6 @@ class DatabaseSeeder extends Seeder
         User::factory(10)->create();        
         Airline::factory(10)->create();
         Flight::factory(10)->create();
-        Travel::factory(10)->create();
+        /*Travel::factory(10)->create();*/
     }
 }
