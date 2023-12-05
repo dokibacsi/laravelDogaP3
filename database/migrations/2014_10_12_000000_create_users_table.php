@@ -21,10 +21,10 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
-        User::create(['name' => "Kis Mária",'email' => 'kismari@huhu.com', "password"=> "kismarika1111"]);
-        User::create(['name' => "Tóth Tibor",'email' => 'tothtibi@huhu.com', "password"=> "totht1b1"]);
-        User::create(['name' => "Vértes Pista",'email' => 'v.pista@huhu.com', "password"=> "vertespityu21"]);
-        User::create(['name' => "Vörös Dominik",'email' => 'vorosdoma@huhu.com', "password"=> "vorosdoma12121212"]);
+        User::create(['name' => "Kis Mária",'email' => 'kismari@huhu.com', "password"=> "kismarika1111", "permission" => 0]);
+        User::create(['name' => "Tóth Tibor",'email' => 'tothtibi@huhu.com', "password"=> "totht1b1", "permission" => 1]);
+        User::create(['name' => "Vértes Pista",'email' => 'v.pista@huhu.com', "password"=> "vertespityu21", "permission" => 0]);
+        User::create(['name' => "Vörös Dominik",'email' => 'vorosdoma@huhu.com', "password"=> "vorosdoma12121212", "permission" => 0]);
     }
 
     /**
